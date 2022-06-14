@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+html, body, main, div, button, p, img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+body{
+    background-color:#121214;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 720px;
+    justify-content: space-evenly;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    padding-bottom:50px;
+}
+.logo>p{
+    font-size: 32px;
+}
+.icones div>p{
+    text-align: center;
+    color:#9C9C9C;
+    cursor:default;
+    align-items: center;
+}
+.icones{
+    display: flex;
+    gap:26px ;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 700px;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+.container-img{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    border-radius: 10%;
+    overflow: hidden;
+    transition: 0.5s ease;
+    border: solid 2px transparent;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+object-fit: cover;
+width: 100%;
+opacity:0.5;
+}
+.icones  div:hover img {
+opacity: 1;
+}
+
+button{
+    border: 1px solid white;
+    background-color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 15px 44px;
+    transition: 0.5s ease;
+}
+.icones div:hover .container-img {
+   border: white solid 2px;
+}
+
+
+.icones  div:hover p {
+    color: white;
+ }
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+ion-icon{
+    font-size: 64px ;
+    color: #9C9C9C;
+    transition: 0.5s ease;
+}
+.icones div:hover ion-icon{
+    color: white;
+}
